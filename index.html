@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css" integrity="sha384-jbCTJB16Q17718YM9U22iJkhuGbS0Gd2LjaWb4YJEZToOPmnKDjySVa323U+W7Fv" crossorigin="anonymous">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <!--CND DE VUE Pegado en el head-->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/utilities.js"></script>
+        <script src="js/components/Title.js"></script>
+        <script src="js/components/Formulario.js"></script>
+        <title> Calculadora Hipotecaria </title>
+        <style>
+            body{
+                background-color: #363a51;
+                color:  white;
+            }
+            h1, .numResult{
+                color: #5cc59e;
+            }
+            .calculateRes{
+                color: #67f494;
+            }
+            .btn-res{
+                background-color: #5cc59e;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+      
+
+
+        <div id="app" class="container mt-3 app">
+            <titleapp></titleapp>
+            <formhipoteca></formhipoteca>
+        </div>
+        
+
+        <script>
+            const app = new Vue({
+                el: '#app',
+                data: {},
+                methods: {
+                },
+                mounted(){
+                    //this.hola()
+                }
+            })
+        </script>
+
+
+    </body>
+</html>
